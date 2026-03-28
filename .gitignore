@@ -1,0 +1,52 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.ipynb_checkpoints/
+
+# R
+.Rhistory
+.RData
+.Rproj.user/
+
+# Environments
+.venv/
+venv/
+env/
+.conda/
+
+# Logs
+*.log
+
+# Large analysis outputs
+data/
+results/
+output/
+outputs/
+tmp/
+cache/
+*.h5ad
+*.h5mu
+*.loom
+*.rds
+*.rda
+*.qs
+*.h5
+*.mtx
+*.bw
+*.bigWig
+*.bed.gz
+*.tsv.gz
+*.csv.gz
+*.fastq
+*.fastq.gz
+*.bam
+*.bai
+*.fragments.tsv.gz
+*.fragments.tsv.gz.tbi
+
+# Figures and derived files
+*.pdf
+*.png
+*.svg
