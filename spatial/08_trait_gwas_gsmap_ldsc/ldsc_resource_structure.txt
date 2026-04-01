@@ -1,0 +1,549 @@
+.
+|-- 1000G_Phase3_baselineLD_v2.2_ldscores
+|   |-- baselineLD.10.annot.gz
+|   |-- baselineLD.10.l2.ldscore.gz
+|   |-- baselineLD.10.l2.M
+|   |-- baselineLD.10.l2.M_5_50
+|   |-- baselineLD.10.log
+|   |-- baselineLD.11.annot.gz
+|   |-- baselineLD.11.l2.ldscore.gz
+|   |-- baselineLD.11.l2.M
+|   |-- baselineLD.11.l2.M_5_50
+|   |-- baselineLD.11.log
+|   |-- baselineLD.12.annot.gz
+|   |-- baselineLD.12.l2.ldscore.gz
+|   |-- baselineLD.12.l2.M
+|   |-- baselineLD.12.l2.M_5_50
+|   |-- baselineLD.12.log
+|   |-- baselineLD.13.annot.gz
+|   |-- baselineLD.13.l2.ldscore.gz
+|   |-- baselineLD.13.l2.M
+|   |-- baselineLD.13.l2.M_5_50
+|   |-- baselineLD.13.log
+|   |-- baselineLD.14.annot.gz
+|   |-- baselineLD.14.l2.ldscore.gz
+|   |-- baselineLD.14.l2.M
+|   |-- baselineLD.14.l2.M_5_50
+|   |-- baselineLD.14.log
+|   |-- baselineLD.15.annot.gz
+|   |-- baselineLD.15.l2.ldscore.gz
+|   |-- baselineLD.15.l2.M
+|   |-- baselineLD.15.l2.M_5_50
+|   |-- baselineLD.15.log
+|   |-- baselineLD.16.annot.gz
+|   |-- baselineLD.16.l2.ldscore.gz
+|   |-- baselineLD.16.l2.M
+|   |-- baselineLD.16.l2.M_5_50
+|   |-- baselineLD.16.log
+|   |-- baselineLD.17.annot.gz
+|   |-- baselineLD.17.l2.ldscore.gz
+|   |-- baselineLD.17.l2.M
+|   |-- baselineLD.17.l2.M_5_50
+|   |-- baselineLD.17.log
+|   |-- baselineLD.18.annot.gz
+|   |-- baselineLD.18.l2.ldscore.gz
+|   |-- baselineLD.18.l2.M
+|   |-- baselineLD.18.l2.M_5_50
+|   |-- baselineLD.18.log
+|   |-- baselineLD.19.annot.gz
+|   |-- baselineLD.19.l2.ldscore.gz
+|   |-- baselineLD.19.l2.M
+|   |-- baselineLD.19.l2.M_5_50
+|   |-- baselineLD.19.log
+|   |-- baselineLD.1.annot.gz
+|   |-- baselineLD.1.l2.ldscore.gz
+|   |-- baselineLD.1.l2.M
+|   |-- baselineLD.1.l2.M_5_50
+|   |-- baselineLD.1.log
+|   |-- baselineLD.20.annot.gz
+|   |-- baselineLD.20.l2.ldscore.gz
+|   |-- baselineLD.20.l2.M
+|   |-- baselineLD.20.l2.M_5_50
+|   |-- baselineLD.20.log
+|   |-- baselineLD.21.annot.gz
+|   |-- baselineLD.21.l2.ldscore.gz
+|   |-- baselineLD.21.l2.M
+|   |-- baselineLD.21.l2.M_5_50
+|   |-- baselineLD.21.log
+|   |-- baselineLD.22.annot.gz
+|   |-- baselineLD.22.l2.ldscore.gz
+|   |-- baselineLD.22.l2.M
+|   |-- baselineLD.22.l2.M_5_50
+|   |-- baselineLD.22.log
+|   |-- baselineLD.2.annot.gz
+|   |-- baselineLD.2.l2.ldscore.gz
+|   |-- baselineLD.2.l2.M
+|   |-- baselineLD.2.l2.M_5_50
+|   |-- baselineLD.2.log
+|   |-- baselineLD.3.annot.gz
+|   |-- baselineLD.3.l2.ldscore.gz
+|   |-- baselineLD.3.l2.M
+|   |-- baselineLD.3.l2.M_5_50
+|   |-- baselineLD.3.log
+|   |-- baselineLD.4.annot.gz
+|   |-- baselineLD.4.l2.ldscore.gz
+|   |-- baselineLD.4.l2.M
+|   |-- baselineLD.4.l2.M_5_50
+|   |-- baselineLD.4.log
+|   |-- baselineLD.5.annot.gz
+|   |-- baselineLD.5.l2.ldscore.gz
+|   |-- baselineLD.5.l2.M
+|   |-- baselineLD.5.l2.M_5_50
+|   |-- baselineLD.5.log
+|   |-- baselineLD.6.annot.gz
+|   |-- baselineLD.6.l2.ldscore.gz
+|   |-- baselineLD.6.l2.M
+|   |-- baselineLD.6.l2.M_5_50
+|   |-- baselineLD.6.log
+|   |-- baselineLD.7.annot.gz
+|   |-- baselineLD.7.l2.ldscore.gz
+|   |-- baselineLD.7.l2.M
+|   |-- baselineLD.7.l2.M_5_50
+|   |-- baselineLD.7.log
+|   |-- baselineLD.8.annot.gz
+|   |-- baselineLD.8.l2.ldscore.gz
+|   |-- baselineLD.8.l2.M
+|   |-- baselineLD.8.l2.M_5_50
+|   |-- baselineLD.8.log
+|   |-- baselineLD.9.annot.gz
+|   |-- baselineLD.9.l2.ldscore.gz
+|   |-- baselineLD.9.l2.M
+|   |-- baselineLD.9.l2.M_5_50
+|   `-- baselineLD.9.log
+|-- 1000G_Phase3_baselineLD_v2.2_ldscores.tgz
+|-- 1000G_Phase3_frq
+|   |-- 1000G.EUR.QC.10.frq
+|   |-- 1000G.EUR.QC.11.frq
+|   |-- 1000G.EUR.QC.12.frq
+|   |-- 1000G.EUR.QC.13.frq
+|   |-- 1000G.EUR.QC.14.frq
+|   |-- 1000G.EUR.QC.15.frq
+|   |-- 1000G.EUR.QC.16.frq
+|   |-- 1000G.EUR.QC.17.frq
+|   |-- 1000G.EUR.QC.18.frq
+|   |-- 1000G.EUR.QC.19.frq
+|   |-- 1000G.EUR.QC.1.frq
+|   |-- 1000G.EUR.QC.20.frq
+|   |-- 1000G.EUR.QC.21.frq
+|   |-- 1000G.EUR.QC.22.frq
+|   |-- 1000G.EUR.QC.2.frq
+|   |-- 1000G.EUR.QC.3.frq
+|   |-- 1000G.EUR.QC.4.frq
+|   |-- 1000G.EUR.QC.5.frq
+|   |-- 1000G.EUR.QC.6.frq
+|   |-- 1000G.EUR.QC.7.frq
+|   |-- 1000G.EUR.QC.8.frq
+|   `-- 1000G.EUR.QC.9.frq
+|-- 1000G_Phase3_frq.tgz
+|-- 1000G_Phase3_ldscores.tgz
+|-- 1000G_Phase3_weights_hm3_no_MHC
+|   |-- weights.hm3_noMHC.10.l2.ldscore.gz
+|   |-- weights.hm3_noMHC.11.l2.ldscore.gz
+|   |-- weights.hm3_noMHC.12.l2.ldscore.gz
+|   |-- weights.hm3_noMHC.13.l2.ldscore.gz
+|   |-- weights.hm3_noMHC.14.l2.ldscore.gz
+|   |-- weights.hm3_noMHC.15.l2.ldscore.gz
+|   |-- weights.hm3_noMHC.16.l2.ldscore.gz
+|   |-- weights.hm3_noMHC.17.l2.ldscore.gz
+|   |-- weights.hm3_noMHC.18.l2.ldscore.gz
+|   |-- weights.hm3_noMHC.19.l2.ldscore.gz
+|   |-- weights.hm3_noMHC.1.l2.ldscore.gz
+|   |-- weights.hm3_noMHC.20.l2.ldscore.gz
+|   |-- weights.hm3_noMHC.21.l2.ldscore.gz
+|   |-- weights.hm3_noMHC.22.l2.ldscore.gz
+|   |-- weights.hm3_noMHC.2.l2.ldscore.gz
+|   |-- weights.hm3_noMHC.3.l2.ldscore.gz
+|   |-- weights.hm3_noMHC.4.l2.ldscore.gz
+|   |-- weights.hm3_noMHC.5.l2.ldscore.gz
+|   |-- weights.hm3_noMHC.6.l2.ldscore.gz
+|   |-- weights.hm3_noMHC.7.l2.ldscore.gz
+|   |-- weights.hm3_noMHC.8.l2.ldscore.gz
+|   `-- weights.hm3_noMHC.9.l2.ldscore.gz
+|-- 1000G_Phase3_weights_hm3_no_MHC.tgz
+|-- baselineLD_v2.2_bedfiles.tgz
+|-- GRCh38
+|   |-- baselineLD_v2.2
+|   |   |-- baselineLD.10.annot.gz
+|   |   |-- baselineLD.10.l2.ldscore.gz
+|   |   |-- baselineLD.10.l2.M
+|   |   |-- baselineLD.10.l2.M_5_50
+|   |   |-- baselineLD.10.log
+|   |   |-- baselineLD.11.annot.gz
+|   |   |-- baselineLD.11.l2.ldscore.gz
+|   |   |-- baselineLD.11.l2.M
+|   |   |-- baselineLD.11.l2.M_5_50
+|   |   |-- baselineLD.11.log
+|   |   |-- baselineLD.12.annot.gz
+|   |   |-- baselineLD.12.l2.ldscore.gz
+|   |   |-- baselineLD.12.l2.M
+|   |   |-- baselineLD.12.l2.M_5_50
+|   |   |-- baselineLD.12.log
+|   |   |-- baselineLD.13.annot.gz
+|   |   |-- baselineLD.13.l2.ldscore.gz
+|   |   |-- baselineLD.13.l2.M
+|   |   |-- baselineLD.13.l2.M_5_50
+|   |   |-- baselineLD.13.log
+|   |   |-- baselineLD.14.annot.gz
+|   |   |-- baselineLD.14.l2.ldscore.gz
+|   |   |-- baselineLD.14.l2.M
+|   |   |-- baselineLD.14.l2.M_5_50
+|   |   |-- baselineLD.14.log
+|   |   |-- baselineLD.15.annot.gz
+|   |   |-- baselineLD.15.l2.ldscore.gz
+|   |   |-- baselineLD.15.l2.M
+|   |   |-- baselineLD.15.l2.M_5_50
+|   |   |-- baselineLD.15.log
+|   |   |-- baselineLD.16.annot.gz
+|   |   |-- baselineLD.16.l2.ldscore.gz
+|   |   |-- baselineLD.16.l2.M
+|   |   |-- baselineLD.16.l2.M_5_50
+|   |   |-- baselineLD.16.log
+|   |   |-- baselineLD.17.annot.gz
+|   |   |-- baselineLD.17.l2.ldscore.gz
+|   |   |-- baselineLD.17.l2.M
+|   |   |-- baselineLD.17.l2.M_5_50
+|   |   |-- baselineLD.17.log
+|   |   |-- baselineLD.18.annot.gz
+|   |   |-- baselineLD.18.l2.ldscore.gz
+|   |   |-- baselineLD.18.l2.M
+|   |   |-- baselineLD.18.l2.M_5_50
+|   |   |-- baselineLD.18.log
+|   |   |-- baselineLD.19.annot.gz
+|   |   |-- baselineLD.19.l2.ldscore.gz
+|   |   |-- baselineLD.19.l2.M
+|   |   |-- baselineLD.19.l2.M_5_50
+|   |   |-- baselineLD.19.log
+|   |   |-- baselineLD.1.annot.gz
+|   |   |-- baselineLD.1.l2.ldscore.gz
+|   |   |-- baselineLD.1.l2.M
+|   |   |-- baselineLD.1.l2.M_5_50
+|   |   |-- baselineLD.1.log
+|   |   |-- baselineLD.20.annot.gz
+|   |   |-- baselineLD.20.l2.ldscore.gz
+|   |   |-- baselineLD.20.l2.M
+|   |   |-- baselineLD.20.l2.M_5_50
+|   |   |-- baselineLD.20.log
+|   |   |-- baselineLD.21.annot.gz
+|   |   |-- baselineLD.21.l2.ldscore.gz
+|   |   |-- baselineLD.21.l2.M
+|   |   |-- baselineLD.21.l2.M_5_50
+|   |   |-- baselineLD.21.log
+|   |   |-- baselineLD.22.annot.gz
+|   |   |-- baselineLD.22.l2.ldscore.gz
+|   |   |-- baselineLD.22.l2.M
+|   |   |-- baselineLD.22.l2.M_5_50
+|   |   |-- baselineLD.22.log
+|   |   |-- baselineLD.2.annot.gz
+|   |   |-- baselineLD.2.l2.ldscore.gz
+|   |   |-- baselineLD.2.l2.M
+|   |   |-- baselineLD.2.l2.M_5_50
+|   |   |-- baselineLD.2.log
+|   |   |-- baselineLD.3.annot.gz
+|   |   |-- baselineLD.3.l2.ldscore.gz
+|   |   |-- baselineLD.3.l2.M
+|   |   |-- baselineLD.3.l2.M_5_50
+|   |   |-- baselineLD.3.log
+|   |   |-- baselineLD.4.annot.gz
+|   |   |-- baselineLD.4.l2.ldscore.gz
+|   |   |-- baselineLD.4.l2.M
+|   |   |-- baselineLD.4.l2.M_5_50
+|   |   |-- baselineLD.4.log
+|   |   |-- baselineLD.5.annot.gz
+|   |   |-- baselineLD.5.l2.ldscore.gz
+|   |   |-- baselineLD.5.l2.M
+|   |   |-- baselineLD.5.l2.M_5_50
+|   |   |-- baselineLD.5.log
+|   |   |-- baselineLD.6.annot.gz
+|   |   |-- baselineLD.6.l2.ldscore.gz
+|   |   |-- baselineLD.6.l2.M
+|   |   |-- baselineLD.6.l2.M_5_50
+|   |   |-- baselineLD.6.log
+|   |   |-- baselineLD.7.annot.gz
+|   |   |-- baselineLD.7.l2.ldscore.gz
+|   |   |-- baselineLD.7.l2.M
+|   |   |-- baselineLD.7.l2.M_5_50
+|   |   |-- baselineLD.7.log
+|   |   |-- baselineLD.8.annot.gz
+|   |   |-- baselineLD.8.l2.ldscore.gz
+|   |   |-- baselineLD.8.l2.M
+|   |   |-- baselineLD.8.l2.M_5_50
+|   |   |-- baselineLD.8.log
+|   |   |-- baselineLD.9.annot.gz
+|   |   |-- baselineLD.9.l2.ldscore.gz
+|   |   |-- baselineLD.9.l2.M
+|   |   |-- baselineLD.9.l2.M_5_50
+|   |   `-- baselineLD.9.log
+|   |-- baselineLD_v2.2.tgz
+|   |-- baseline_v1.2.tgz
+|   |-- plink_files
+|   |   |-- 1000G.EUR.hg38.10.bed
+|   |   |-- 1000G.EUR.hg38.10.bim
+|   |   |-- 1000G.EUR.hg38.10.fam
+|   |   |-- 1000G.EUR.hg38.10.frq
+|   |   |-- 1000G.EUR.hg38.11.bed
+|   |   |-- 1000G.EUR.hg38.11.bim
+|   |   |-- 1000G.EUR.hg38.11.fam
+|   |   |-- 1000G.EUR.hg38.11.frq
+|   |   |-- 1000G.EUR.hg38.12.bed
+|   |   |-- 1000G.EUR.hg38.12.bim
+|   |   |-- 1000G.EUR.hg38.12.fam
+|   |   |-- 1000G.EUR.hg38.12.frq
+|   |   |-- 1000G.EUR.hg38.13.bed
+|   |   |-- 1000G.EUR.hg38.13.bim
+|   |   |-- 1000G.EUR.hg38.13.fam
+|   |   |-- 1000G.EUR.hg38.13.frq
+|   |   |-- 1000G.EUR.hg38.14.bed
+|   |   |-- 1000G.EUR.hg38.14.bim
+|   |   |-- 1000G.EUR.hg38.14.fam
+|   |   |-- 1000G.EUR.hg38.14.frq
+|   |   |-- 1000G.EUR.hg38.15.bed
+|   |   |-- 1000G.EUR.hg38.15.bim
+|   |   |-- 1000G.EUR.hg38.15.fam
+|   |   |-- 1000G.EUR.hg38.15.frq
+|   |   |-- 1000G.EUR.hg38.16.bed
+|   |   |-- 1000G.EUR.hg38.16.bim
+|   |   |-- 1000G.EUR.hg38.16.fam
+|   |   |-- 1000G.EUR.hg38.16.frq
+|   |   |-- 1000G.EUR.hg38.17.bed
+|   |   |-- 1000G.EUR.hg38.17.bim
+|   |   |-- 1000G.EUR.hg38.17.fam
+|   |   |-- 1000G.EUR.hg38.17.frq
+|   |   |-- 1000G.EUR.hg38.18.bed
+|   |   |-- 1000G.EUR.hg38.18.bim
+|   |   |-- 1000G.EUR.hg38.18.fam
+|   |   |-- 1000G.EUR.hg38.18.frq
+|   |   |-- 1000G.EUR.hg38.19.bed
+|   |   |-- 1000G.EUR.hg38.19.bim
+|   |   |-- 1000G.EUR.hg38.19.fam
+|   |   |-- 1000G.EUR.hg38.19.frq
+|   |   |-- 1000G.EUR.hg38.1.bed
+|   |   |-- 1000G.EUR.hg38.1.bim
+|   |   |-- 1000G.EUR.hg38.1.fam
+|   |   |-- 1000G.EUR.hg38.1.frq
+|   |   |-- 1000G.EUR.hg38.20.bed
+|   |   |-- 1000G.EUR.hg38.20.bim
+|   |   |-- 1000G.EUR.hg38.20.fam
+|   |   |-- 1000G.EUR.hg38.20.frq
+|   |   |-- 1000G.EUR.hg38.21.bed
+|   |   |-- 1000G.EUR.hg38.21.bim
+|   |   |-- 1000G.EUR.hg38.21.fam
+|   |   |-- 1000G.EUR.hg38.21.frq
+|   |   |-- 1000G.EUR.hg38.22.bed
+|   |   |-- 1000G.EUR.hg38.22.bim
+|   |   |-- 1000G.EUR.hg38.22.fam
+|   |   |-- 1000G.EUR.hg38.22.frq
+|   |   |-- 1000G.EUR.hg38.2.bed
+|   |   |-- 1000G.EUR.hg38.2.bim
+|   |   |-- 1000G.EUR.hg38.2.fam
+|   |   |-- 1000G.EUR.hg38.2.frq
+|   |   |-- 1000G.EUR.hg38.3.bed
+|   |   |-- 1000G.EUR.hg38.3.bim
+|   |   |-- 1000G.EUR.hg38.3.fam
+|   |   |-- 1000G.EUR.hg38.3.frq
+|   |   |-- 1000G.EUR.hg38.4.bed
+|   |   |-- 1000G.EUR.hg38.4.bim
+|   |   |-- 1000G.EUR.hg38.4.fam
+|   |   |-- 1000G.EUR.hg38.4.frq
+|   |   |-- 1000G.EUR.hg38.5.bed
+|   |   |-- 1000G.EUR.hg38.5.bim
+|   |   |-- 1000G.EUR.hg38.5.fam
+|   |   |-- 1000G.EUR.hg38.5.frq
+|   |   |-- 1000G.EUR.hg38.6.bed
+|   |   |-- 1000G.EUR.hg38.6.bim
+|   |   |-- 1000G.EUR.hg38.6.fam
+|   |   |-- 1000G.EUR.hg38.6.frq
+|   |   |-- 1000G.EUR.hg38.7.bed
+|   |   |-- 1000G.EUR.hg38.7.bim
+|   |   |-- 1000G.EUR.hg38.7.fam
+|   |   |-- 1000G.EUR.hg38.7.frq
+|   |   |-- 1000G.EUR.hg38.8.bed
+|   |   |-- 1000G.EUR.hg38.8.bim
+|   |   |-- 1000G.EUR.hg38.8.fam
+|   |   |-- 1000G.EUR.hg38.8.frq
+|   |   |-- 1000G.EUR.hg38.9.bed
+|   |   |-- 1000G.EUR.hg38.9.bim
+|   |   |-- 1000G.EUR.hg38.9.fam
+|   |   `-- 1000G.EUR.hg38.9.frq
+|   |-- plink_files.tgz
+|   |-- weights
+|   |   |-- weights.hm3_noMHC.10.l2.ldscore.gz
+|   |   |-- weights.hm3_noMHC.10.l2.M
+|   |   |-- weights.hm3_noMHC.10.l2.M_5_50
+|   |   |-- weights.hm3_noMHC.10.log
+|   |   |-- weights.hm3_noMHC.11.l2.ldscore.gz
+|   |   |-- weights.hm3_noMHC.11.l2.M
+|   |   |-- weights.hm3_noMHC.11.l2.M_5_50
+|   |   |-- weights.hm3_noMHC.11.log
+|   |   |-- weights.hm3_noMHC.12.l2.ldscore.gz
+|   |   |-- weights.hm3_noMHC.12.l2.M
+|   |   |-- weights.hm3_noMHC.12.l2.M_5_50
+|   |   |-- weights.hm3_noMHC.12.log
+|   |   |-- weights.hm3_noMHC.13.l2.ldscore.gz
+|   |   |-- weights.hm3_noMHC.13.l2.M
+|   |   |-- weights.hm3_noMHC.13.l2.M_5_50
+|   |   |-- weights.hm3_noMHC.13.log
+|   |   |-- weights.hm3_noMHC.14.l2.ldscore.gz
+|   |   |-- weights.hm3_noMHC.14.l2.M
+|   |   |-- weights.hm3_noMHC.14.l2.M_5_50
+|   |   |-- weights.hm3_noMHC.14.log
+|   |   |-- weights.hm3_noMHC.15.l2.ldscore.gz
+|   |   |-- weights.hm3_noMHC.15.l2.M
+|   |   |-- weights.hm3_noMHC.15.l2.M_5_50
+|   |   |-- weights.hm3_noMHC.15.log
+|   |   |-- weights.hm3_noMHC.16.l2.ldscore.gz
+|   |   |-- weights.hm3_noMHC.16.l2.M
+|   |   |-- weights.hm3_noMHC.16.l2.M_5_50
+|   |   |-- weights.hm3_noMHC.16.log
+|   |   |-- weights.hm3_noMHC.17.l2.ldscore.gz
+|   |   |-- weights.hm3_noMHC.17.l2.M
+|   |   |-- weights.hm3_noMHC.17.l2.M_5_50
+|   |   |-- weights.hm3_noMHC.17.log
+|   |   |-- weights.hm3_noMHC.18.l2.ldscore.gz
+|   |   |-- weights.hm3_noMHC.18.l2.M
+|   |   |-- weights.hm3_noMHC.18.l2.M_5_50
+|   |   |-- weights.hm3_noMHC.18.log
+|   |   |-- weights.hm3_noMHC.19.l2.ldscore.gz
+|   |   |-- weights.hm3_noMHC.19.l2.M
+|   |   |-- weights.hm3_noMHC.19.l2.M_5_50
+|   |   |-- weights.hm3_noMHC.19.log
+|   |   |-- weights.hm3_noMHC.1.l2.ldscore.gz
+|   |   |-- weights.hm3_noMHC.1.l2.M
+|   |   |-- weights.hm3_noMHC.1.l2.M_5_50
+|   |   |-- weights.hm3_noMHC.1.log
+|   |   |-- weights.hm3_noMHC.20.l2.ldscore.gz
+|   |   |-- weights.hm3_noMHC.20.l2.M
+|   |   |-- weights.hm3_noMHC.20.l2.M_5_50
+|   |   |-- weights.hm3_noMHC.20.log
+|   |   |-- weights.hm3_noMHC.21.l2.ldscore.gz
+|   |   |-- weights.hm3_noMHC.21.l2.M
+|   |   |-- weights.hm3_noMHC.21.l2.M_5_50
+|   |   |-- weights.hm3_noMHC.21.log
+|   |   |-- weights.hm3_noMHC.22.l2.ldscore.gz
+|   |   |-- weights.hm3_noMHC.22.l2.M
+|   |   |-- weights.hm3_noMHC.22.l2.M_5_50
+|   |   |-- weights.hm3_noMHC.22.log
+|   |   |-- weights.hm3_noMHC.2.l2.ldscore.gz
+|   |   |-- weights.hm3_noMHC.2.l2.M
+|   |   |-- weights.hm3_noMHC.2.l2.M_5_50
+|   |   |-- weights.hm3_noMHC.2.log
+|   |   |-- weights.hm3_noMHC.3.l2.ldscore.gz
+|   |   |-- weights.hm3_noMHC.3.l2.M
+|   |   |-- weights.hm3_noMHC.3.l2.M_5_50
+|   |   |-- weights.hm3_noMHC.3.log
+|   |   |-- weights.hm3_noMHC.4.l2.ldscore.gz
+|   |   |-- weights.hm3_noMHC.4.l2.M
+|   |   |-- weights.hm3_noMHC.4.l2.M_5_50
+|   |   |-- weights.hm3_noMHC.4.log
+|   |   |-- weights.hm3_noMHC.5.l2.ldscore.gz
+|   |   |-- weights.hm3_noMHC.5.l2.M
+|   |   |-- weights.hm3_noMHC.5.l2.M_5_50
+|   |   |-- weights.hm3_noMHC.5.log
+|   |   |-- weights.hm3_noMHC.6.l2.ldscore.gz
+|   |   |-- weights.hm3_noMHC.6.l2.M
+|   |   |-- weights.hm3_noMHC.6.l2.M_5_50
+|   |   |-- weights.hm3_noMHC.6.log
+|   |   |-- weights.hm3_noMHC.7.l2.ldscore.gz
+|   |   |-- weights.hm3_noMHC.7.l2.M
+|   |   |-- weights.hm3_noMHC.7.l2.M_5_50
+|   |   |-- weights.hm3_noMHC.7.log
+|   |   |-- weights.hm3_noMHC.8.l2.ldscore.gz
+|   |   |-- weights.hm3_noMHC.8.l2.M
+|   |   |-- weights.hm3_noMHC.8.l2.M_5_50
+|   |   |-- weights.hm3_noMHC.8.log
+|   |   |-- weights.hm3_noMHC.9.l2.ldscore.gz
+|   |   |-- weights.hm3_noMHC.9.l2.M
+|   |   |-- weights.hm3_noMHC.9.l2.M_5_50
+|   |   `-- weights.hm3_noMHC.9.log
+|   `-- weights.tgz
+|-- GRCh38.tgz
+|-- LDscore
+|   |-- LDscore.10.l2.ldscore.gz
+|   |-- LDscore.10.l2.M
+|   |-- LDscore.10.l2.M_5_50
+|   |-- LDscore.10.log
+|   |-- LDscore.11.l2.ldscore.gz
+|   |-- LDscore.11.l2.M
+|   |-- LDscore.11.l2.M_5_50
+|   |-- LDscore.11.log
+|   |-- LDscore.12.l2.ldscore.gz
+|   |-- LDscore.12.l2.M
+|   |-- LDscore.12.l2.M_5_50
+|   |-- LDscore.12.log
+|   |-- LDscore.13.l2.ldscore.gz
+|   |-- LDscore.13.l2.M
+|   |-- LDscore.13.l2.M_5_50
+|   |-- LDscore.13.log
+|   |-- LDscore.14.l2.ldscore.gz
+|   |-- LDscore.14.l2.M
+|   |-- LDscore.14.l2.M_5_50
+|   |-- LDscore.14.log
+|   |-- LDscore.15.l2.ldscore.gz
+|   |-- LDscore.15.l2.M
+|   |-- LDscore.15.l2.M_5_50
+|   |-- LDscore.15.log
+|   |-- LDscore.16.l2.ldscore.gz
+|   |-- LDscore.16.l2.M
+|   |-- LDscore.16.l2.M_5_50
+|   |-- LDscore.16.log
+|   |-- LDscore.17.l2.ldscore.gz
+|   |-- LDscore.17.l2.M
+|   |-- LDscore.17.l2.M_5_50
+|   |-- LDscore.17.log
+|   |-- LDscore.18.l2.ldscore.gz
+|   |-- LDscore.18.l2.M
+|   |-- LDscore.18.l2.M_5_50
+|   |-- LDscore.18.log
+|   |-- LDscore.19.l2.ldscore.gz
+|   |-- LDscore.19.l2.M
+|   |-- LDscore.19.l2.M_5_50
+|   |-- LDscore.19.log
+|   |-- LDscore.1.l2.ldscore.gz
+|   |-- LDscore.1.l2.M
+|   |-- LDscore.1.l2.M_5_50
+|   |-- LDscore.1.log
+|   |-- LDscore.20.l2.ldscore.gz
+|   |-- LDscore.20.l2.M
+|   |-- LDscore.20.l2.M_5_50
+|   |-- LDscore.20.log
+|   |-- LDscore.21.l2.ldscore.gz
+|   |-- LDscore.21.l2.M
+|   |-- LDscore.21.l2.M_5_50
+|   |-- LDscore.21.log
+|   |-- LDscore.22.l2.ldscore.gz
+|   |-- LDscore.22.l2.M
+|   |-- LDscore.22.l2.M_5_50
+|   |-- LDscore.22.log
+|   |-- LDscore.2.l2.ldscore.gz
+|   |-- LDscore.2.l2.M
+|   |-- LDscore.2.l2.M_5_50
+|   |-- LDscore.2.log
+|   |-- LDscore.3.l2.ldscore.gz
+|   |-- LDscore.3.l2.M
+|   |-- LDscore.3.l2.M_5_50
+|   |-- LDscore.3.log
+|   |-- LDscore.4.l2.ldscore.gz
+|   |-- LDscore.4.l2.M
+|   |-- LDscore.4.l2.M_5_50
+|   |-- LDscore.4.log
+|   |-- LDscore.5.l2.ldscore.gz
+|   |-- LDscore.5.l2.M
+|   |-- LDscore.5.l2.M_5_50
+|   |-- LDscore.5.log
+|   |-- LDscore.6.l2.ldscore.gz
+|   |-- LDscore.6.l2.M
+|   |-- LDscore.6.l2.M_5_50
+|   |-- LDscore.6.log
+|   |-- LDscore.7.l2.ldscore.gz
+|   |-- LDscore.7.l2.M
+|   |-- LDscore.7.l2.M_5_50
+|   |-- LDscore.7.log
+|   |-- LDscore.8.l2.ldscore.gz
+|   |-- LDscore.8.l2.M
+|   |-- LDscore.8.l2.M_5_50
+|   |-- LDscore.8.log
+|   |-- LDscore.9.l2.ldscore.gz
+|   |-- LDscore.9.l2.M
+|   |-- LDscore.9.l2.M_5_50
+|   `-- LDscore.9.log
+|-- ldsc_resource_structure.txt
+`-- print_snps.txt

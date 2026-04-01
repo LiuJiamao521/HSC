@@ -1,0 +1,527 @@
+.
+|-- genome_annotation
+|   |-- enhancer
+|   |   |-- by_tissue
+|   |   |   |-- ALL
+|   |   |   |   |-- ABC.bed
+|   |   |   |   |-- ABC_roadmap_merged.bed
+|   |   |   |   `-- roadmap.bed
+|   |   |   |-- BLD
+|   |   |   |   |-- ABC.bed
+|   |   |   |   |-- ABC_roadmap_merged.bed
+|   |   |   |   `-- roadmap.bed
+|   |   |   |-- BRN
+|   |   |   |   |-- ABC.bed
+|   |   |   |   |-- ABC_roadmap_merged.bed
+|   |   |   |   `-- roadmap.bed
+|   |   |   |-- FAT
+|   |   |   |   |-- ABC.bed
+|   |   |   |   |-- ABC_roadmap_merged.bed
+|   |   |   |   `-- roadmap.bed
+|   |   |   |-- GI
+|   |   |   |   |-- ABC.bed
+|   |   |   |   |-- ABC_roadmap_merged.bed
+|   |   |   |   `-- roadmap.bed
+|   |   |   |-- HRT
+|   |   |   |   |-- ABC.bed
+|   |   |   |   |-- ABC_roadmap_merged.bed
+|   |   |   |   `-- roadmap.bed
+|   |   |   |-- KID
+|   |   |   |   |-- ABC_roadmap_merged.bed
+|   |   |   |   `-- roadmap.bed
+|   |   |   |-- LIV
+|   |   |   |   |-- ABC.bed
+|   |   |   |   |-- ABC_roadmap_merged.bed
+|   |   |   |   `-- roadmap.bed
+|   |   |   |-- LNG
+|   |   |   |   |-- ABC.bed
+|   |   |   |   |-- ABC_roadmap_merged.bed
+|   |   |   |   `-- roadmap.bed
+|   |   |   |-- PANC
+|   |   |   |   |-- ABC.bed
+|   |   |   |   |-- ABC_roadmap_merged.bed
+|   |   |   |   `-- roadmap.bed
+|   |   |   `-- SKIN
+|   |   |       |-- ABC.bed
+|   |   |       |-- ABC_roadmap_merged.bed
+|   |   |       `-- roadmap.bed
+|   |   |-- by_tissue_hg38
+|   |   |   |-- ALL
+|   |   |   |   |-- ABC.bed
+|   |   |   |   |-- ABC_roadmap_merged.bed
+|   |   |   |   `-- roadmap.bed
+|   |   |   |-- BLD
+|   |   |   |   |-- ABC.bed
+|   |   |   |   |-- ABC_roadmap_merged.bed
+|   |   |   |   `-- roadmap.bed
+|   |   |   |-- BRN
+|   |   |   |   |-- ABC.bed
+|   |   |   |   |-- ABC_roadmap_merged.bed
+|   |   |   |   `-- roadmap.bed
+|   |   |   |-- FAT
+|   |   |   |   |-- ABC.bed
+|   |   |   |   |-- ABC_roadmap_merged.bed
+|   |   |   |   `-- roadmap.bed
+|   |   |   |-- GI
+|   |   |   |   |-- ABC.bed
+|   |   |   |   |-- ABC_roadmap_merged.bed
+|   |   |   |   `-- roadmap.bed
+|   |   |   |-- HRT
+|   |   |   |   |-- ABC.bed
+|   |   |   |   |-- ABC_roadmap_merged.bed
+|   |   |   |   `-- roadmap.bed
+|   |   |   |-- KID
+|   |   |   |   |-- ABC_roadmap_merged.bed
+|   |   |   |   `-- roadmap.bed
+|   |   |   |-- LIV
+|   |   |   |   |-- ABC.bed
+|   |   |   |   |-- ABC_roadmap_merged.bed
+|   |   |   |   `-- roadmap.bed
+|   |   |   |-- LNG
+|   |   |   |   |-- ABC.bed
+|   |   |   |   |-- ABC_roadmap_merged.bed
+|   |   |   |   `-- roadmap.bed
+|   |   |   |-- PANC
+|   |   |   |   |-- ABC.bed
+|   |   |   |   |-- ABC_roadmap_merged.bed
+|   |   |   |   `-- roadmap.bed
+|   |   |   `-- SKIN
+|   |   |       |-- ABC.bed
+|   |   |       |-- ABC_roadmap_merged.bed
+|   |   |       `-- roadmap.bed
+|   |   |-- by_tissue_hg38.sh
+|   |   `-- tmp
+|   |       |-- ALL_ABC_roadmap_merged_unmapped.bed
+|   |       |-- ALL_ABC_unmapped.bed
+|   |       |-- ALL_roadmap_unmapped.bed
+|   |       |-- BLD_ABC_roadmap_merged_unmapped.bed
+|   |       |-- BLD_ABC_unmapped.bed
+|   |       |-- BLD_roadmap_unmapped.bed
+|   |       |-- BRN_ABC_roadmap_merged_unmapped.bed
+|   |       |-- BRN_ABC_unmapped.bed
+|   |       |-- BRN_roadmap_unmapped.bed
+|   |       |-- FAT_ABC_roadmap_merged_unmapped.bed
+|   |       |-- FAT_ABC_unmapped.bed
+|   |       |-- FAT_roadmap_unmapped.bed
+|   |       |-- GI_ABC_roadmap_merged_unmapped.bed
+|   |       |-- GI_ABC_unmapped.bed
+|   |       |-- GI_roadmap_unmapped.bed
+|   |       |-- HRT_ABC_roadmap_merged_unmapped.bed
+|   |       |-- HRT_ABC_unmapped.bed
+|   |       |-- HRT_roadmap_unmapped.bed
+|   |       |-- KID_ABC_roadmap_merged_unmapped.bed
+|   |       |-- KID_roadmap_unmapped.bed
+|   |       |-- LIV_ABC_roadmap_merged_unmapped.bed
+|   |       |-- LIV_ABC_unmapped.bed
+|   |       |-- LIV_roadmap_unmapped.bed
+|   |       |-- LNG_ABC_roadmap_merged_unmapped.bed
+|   |       |-- LNG_ABC_unmapped.bed
+|   |       |-- LNG_roadmap_unmapped.bed
+|   |       |-- PANC_ABC_roadmap_merged_unmapped.bed
+|   |       |-- PANC_ABC_unmapped.bed
+|   |       |-- PANC_roadmap_unmapped.bed
+|   |       |-- SKIN_ABC_roadmap_merged_unmapped.bed
+|   |       |-- SKIN_ABC_unmapped.bed
+|   |       `-- SKIN_roadmap_unmapped.bed
+|   `-- gtf
+|       |-- gencode.v46.basic.annotation.gtf
+|       `-- gencode.v46lift37.basic.annotation.gtf
+|-- homologs
+|   |-- human_macaque_marmoset_mouse_homologs.txt.gz
+|   |-- macaque_human_homologs.txt
+|   `-- mouse_human_homologs.txt
+|-- LD_Reference_Panel
+|   |-- 1000G_EUR_Phase3_plink
+|   |   |-- 1000G.EUR.QC.10.bed
+|   |   |-- 1000G.EUR.QC.10.bim
+|   |   |-- 1000G.EUR.QC.10.fam
+|   |   |-- 1000G.EUR.QC.11.bed
+|   |   |-- 1000G.EUR.QC.11.bim
+|   |   |-- 1000G.EUR.QC.11.fam
+|   |   |-- 1000G.EUR.QC.12.bed
+|   |   |-- 1000G.EUR.QC.12.bim
+|   |   |-- 1000G.EUR.QC.12.fam
+|   |   |-- 1000G.EUR.QC.13.bed
+|   |   |-- 1000G.EUR.QC.13.bim
+|   |   |-- 1000G.EUR.QC.13.fam
+|   |   |-- 1000G.EUR.QC.14.bed
+|   |   |-- 1000G.EUR.QC.14.bim
+|   |   |-- 1000G.EUR.QC.14.fam
+|   |   |-- 1000G.EUR.QC.15.bed
+|   |   |-- 1000G.EUR.QC.15.bim
+|   |   |-- 1000G.EUR.QC.15.fam
+|   |   |-- 1000G.EUR.QC.16.bed
+|   |   |-- 1000G.EUR.QC.16.bim
+|   |   |-- 1000G.EUR.QC.16.fam
+|   |   |-- 1000G.EUR.QC.17.bed
+|   |   |-- 1000G.EUR.QC.17.bim
+|   |   |-- 1000G.EUR.QC.17.fam
+|   |   |-- 1000G.EUR.QC.18.bed
+|   |   |-- 1000G.EUR.QC.18.bim
+|   |   |-- 1000G.EUR.QC.18.fam
+|   |   |-- 1000G.EUR.QC.19.bed
+|   |   |-- 1000G.EUR.QC.19.bim
+|   |   |-- 1000G.EUR.QC.19.fam
+|   |   |-- 1000G.EUR.QC.1.bed
+|   |   |-- 1000G.EUR.QC.1.bim
+|   |   |-- 1000G.EUR.QC.1.fam
+|   |   |-- 1000G.EUR.QC.20.bed
+|   |   |-- 1000G.EUR.QC.20.bim
+|   |   |-- 1000G.EUR.QC.20.fam
+|   |   |-- 1000G.EUR.QC.21.bed
+|   |   |-- 1000G.EUR.QC.21.bim
+|   |   |-- 1000G.EUR.QC.21.fam
+|   |   |-- 1000G.EUR.QC.22.bed
+|   |   |-- 1000G.EUR.QC.22.bim
+|   |   |-- 1000G.EUR.QC.22.fam
+|   |   |-- 1000G.EUR.QC.2.bed
+|   |   |-- 1000G.EUR.QC.2.bim
+|   |   |-- 1000G.EUR.QC.2.fam
+|   |   |-- 1000G.EUR.QC.3.bed
+|   |   |-- 1000G.EUR.QC.3.bim
+|   |   |-- 1000G.EUR.QC.3.fam
+|   |   |-- 1000G.EUR.QC.4.bed
+|   |   |-- 1000G.EUR.QC.4.bim
+|   |   |-- 1000G.EUR.QC.4.fam
+|   |   |-- 1000G.EUR.QC.5.bed
+|   |   |-- 1000G.EUR.QC.5.bim
+|   |   |-- 1000G.EUR.QC.5.fam
+|   |   |-- 1000G.EUR.QC.6.bed
+|   |   |-- 1000G.EUR.QC.6.bim
+|   |   |-- 1000G.EUR.QC.6.fam
+|   |   |-- 1000G.EUR.QC.7.bed
+|   |   |-- 1000G.EUR.QC.7.bim
+|   |   |-- 1000G.EUR.QC.7.fam
+|   |   |-- 1000G.EUR.QC.8.bed
+|   |   |-- 1000G.EUR.QC.8.bim
+|   |   |-- 1000G.EUR.QC.8.fam
+|   |   |-- 1000G.EUR.QC.9.bed
+|   |   |-- 1000G.EUR.QC.9.bim
+|   |   `-- 1000G.EUR.QC.9.fam
+|   |-- 1000G_EUR_Phase3_plink_hg38
+|   |   |-- 1000G.EUR.QC.10.bed
+|   |   |-- 1000G.EUR.QC.10.bim
+|   |   |-- 1000G.EUR.QC.10.fam
+|   |   |-- 1000G.EUR.QC.10.log
+|   |   |-- 1000G.EUR.QC.11.bed
+|   |   |-- 1000G.EUR.QC.11.bim
+|   |   |-- 1000G.EUR.QC.11.fam
+|   |   |-- 1000G.EUR.QC.11.log
+|   |   |-- 1000G.EUR.QC.12.bed
+|   |   |-- 1000G.EUR.QC.12.bim
+|   |   |-- 1000G.EUR.QC.12.fam
+|   |   |-- 1000G.EUR.QC.12.log
+|   |   |-- 1000G.EUR.QC.13.bed
+|   |   |-- 1000G.EUR.QC.13.bim
+|   |   |-- 1000G.EUR.QC.13.fam
+|   |   |-- 1000G.EUR.QC.13.log
+|   |   |-- 1000G.EUR.QC.14.bed
+|   |   |-- 1000G.EUR.QC.14.bim
+|   |   |-- 1000G.EUR.QC.14.fam
+|   |   |-- 1000G.EUR.QC.14.log
+|   |   |-- 1000G.EUR.QC.15.bed
+|   |   |-- 1000G.EUR.QC.15.bim
+|   |   |-- 1000G.EUR.QC.15.fam
+|   |   |-- 1000G.EUR.QC.15.log
+|   |   |-- 1000G.EUR.QC.16.bed
+|   |   |-- 1000G.EUR.QC.16.bim
+|   |   |-- 1000G.EUR.QC.16.fam
+|   |   |-- 1000G.EUR.QC.16.log
+|   |   |-- 1000G.EUR.QC.17.bed
+|   |   |-- 1000G.EUR.QC.17.bim
+|   |   |-- 1000G.EUR.QC.17.fam
+|   |   |-- 1000G.EUR.QC.17.log
+|   |   |-- 1000G.EUR.QC.18.bed
+|   |   |-- 1000G.EUR.QC.18.bim
+|   |   |-- 1000G.EUR.QC.18.fam
+|   |   |-- 1000G.EUR.QC.18.log
+|   |   |-- 1000G.EUR.QC.19.bed
+|   |   |-- 1000G.EUR.QC.19.bim
+|   |   |-- 1000G.EUR.QC.19.fam
+|   |   |-- 1000G.EUR.QC.19.log
+|   |   |-- 1000G.EUR.QC.1.bed
+|   |   |-- 1000G.EUR.QC.1.bim
+|   |   |-- 1000G.EUR.QC.1.fam
+|   |   |-- 1000G.EUR.QC.1.log
+|   |   |-- 1000G.EUR.QC.20.bed
+|   |   |-- 1000G.EUR.QC.20.bim
+|   |   |-- 1000G.EUR.QC.20.fam
+|   |   |-- 1000G.EUR.QC.20.log
+|   |   |-- 1000G.EUR.QC.21.bed
+|   |   |-- 1000G.EUR.QC.21.bim
+|   |   |-- 1000G.EUR.QC.21.fam
+|   |   |-- 1000G.EUR.QC.21.log
+|   |   |-- 1000G.EUR.QC.22.bed
+|   |   |-- 1000G.EUR.QC.22.bim
+|   |   |-- 1000G.EUR.QC.22.fam
+|   |   |-- 1000G.EUR.QC.22.log
+|   |   |-- 1000G.EUR.QC.2.bed
+|   |   |-- 1000G.EUR.QC.2.bim
+|   |   |-- 1000G.EUR.QC.2.fam
+|   |   |-- 1000G.EUR.QC.2.log
+|   |   |-- 1000G.EUR.QC.3.bed
+|   |   |-- 1000G.EUR.QC.3.bim
+|   |   |-- 1000G.EUR.QC.3.fam
+|   |   |-- 1000G.EUR.QC.3.log
+|   |   |-- 1000G.EUR.QC.4.bed
+|   |   |-- 1000G.EUR.QC.4.bim
+|   |   |-- 1000G.EUR.QC.4.fam
+|   |   |-- 1000G.EUR.QC.4.log
+|   |   |-- 1000G.EUR.QC.5.bed
+|   |   |-- 1000G.EUR.QC.5.bim
+|   |   |-- 1000G.EUR.QC.5.fam
+|   |   |-- 1000G.EUR.QC.5.log
+|   |   |-- 1000G.EUR.QC.6.bed
+|   |   |-- 1000G.EUR.QC.6.bim
+|   |   |-- 1000G.EUR.QC.6.fam
+|   |   |-- 1000G.EUR.QC.6.log
+|   |   |-- 1000G.EUR.QC.7.bed
+|   |   |-- 1000G.EUR.QC.7.bim
+|   |   |-- 1000G.EUR.QC.7.fam
+|   |   |-- 1000G.EUR.QC.7.log
+|   |   |-- 1000G.EUR.QC.8.bed
+|   |   |-- 1000G.EUR.QC.8.bim
+|   |   |-- 1000G.EUR.QC.8.fam
+|   |   |-- 1000G.EUR.QC.8.log
+|   |   |-- 1000G.EUR.QC.9.bed
+|   |   |-- 1000G.EUR.QC.9.bim
+|   |   |-- 1000G.EUR.QC.9.fam
+|   |   `-- 1000G.EUR.QC.9.log
+|   |-- 1000G_EUR_Phase3_plink_hg38.sh
+|   |-- phase3_liftover_nygc
+|   |   |-- 1000G_EUR_GRCh38_chr1.bed
+|   |   |-- 1000G_EUR_GRCh38_chr1.bim
+|   |   |-- 1000G_EUR_GRCh38_chr1.fam
+|   |   |-- 1000G_EUR_GRCh38_chr1.log
+|   |   |-- phase3.chr1.GRCh38.GT.crossmap.vcf.gz
+|   |   `-- pk.sh
+|   `-- tmp
+|       |-- 1000G.EUR.QC.10.bed
+|       |-- 1000G.EUR.QC.10.hg38.bed
+|       |-- 1000G.EUR.QC.10.kept_snps.txt
+|       |-- 1000G.EUR.QC.10.unmapped.bed
+|       |-- 1000G.EUR.QC.11.bed
+|       |-- 1000G.EUR.QC.11.hg38.bed
+|       |-- 1000G.EUR.QC.11.kept_snps.txt
+|       |-- 1000G.EUR.QC.11.unmapped.bed
+|       |-- 1000G.EUR.QC.12.bed
+|       |-- 1000G.EUR.QC.12.hg38.bed
+|       |-- 1000G.EUR.QC.12.kept_snps.txt
+|       |-- 1000G.EUR.QC.12.unmapped.bed
+|       |-- 1000G.EUR.QC.13.bed
+|       |-- 1000G.EUR.QC.13.hg38.bed
+|       |-- 1000G.EUR.QC.13.kept_snps.txt
+|       |-- 1000G.EUR.QC.13.unmapped.bed
+|       |-- 1000G.EUR.QC.14.bed
+|       |-- 1000G.EUR.QC.14.hg38.bed
+|       |-- 1000G.EUR.QC.14.kept_snps.txt
+|       |-- 1000G.EUR.QC.14.unmapped.bed
+|       |-- 1000G.EUR.QC.15.bed
+|       |-- 1000G.EUR.QC.15.hg38.bed
+|       |-- 1000G.EUR.QC.15.kept_snps.txt
+|       |-- 1000G.EUR.QC.15.unmapped.bed
+|       |-- 1000G.EUR.QC.16.bed
+|       |-- 1000G.EUR.QC.16.hg38.bed
+|       |-- 1000G.EUR.QC.16.kept_snps.txt
+|       |-- 1000G.EUR.QC.16.unmapped.bed
+|       |-- 1000G.EUR.QC.17.bed
+|       |-- 1000G.EUR.QC.17.hg38.bed
+|       |-- 1000G.EUR.QC.17.kept_snps.txt
+|       |-- 1000G.EUR.QC.17.unmapped.bed
+|       |-- 1000G.EUR.QC.18.bed
+|       |-- 1000G.EUR.QC.18.hg38.bed
+|       |-- 1000G.EUR.QC.18.kept_snps.txt
+|       |-- 1000G.EUR.QC.18.unmapped.bed
+|       |-- 1000G.EUR.QC.19.bed
+|       |-- 1000G.EUR.QC.19.hg38.bed
+|       |-- 1000G.EUR.QC.19.kept_snps.txt
+|       |-- 1000G.EUR.QC.19.unmapped.bed
+|       |-- 1000G.EUR.QC.1.bed
+|       |-- 1000G.EUR.QC.1.hg38.bed
+|       |-- 1000G.EUR.QC.1.kept_snps.txt
+|       |-- 1000G.EUR.QC.1.unmapped.bed
+|       |-- 1000G.EUR.QC.20.bed
+|       |-- 1000G.EUR.QC.20.hg38.bed
+|       |-- 1000G.EUR.QC.20.kept_snps.txt
+|       |-- 1000G.EUR.QC.20.unmapped.bed
+|       |-- 1000G.EUR.QC.21.bed
+|       |-- 1000G.EUR.QC.21.hg38.bed
+|       |-- 1000G.EUR.QC.21.kept_snps.txt
+|       |-- 1000G.EUR.QC.21.unmapped.bed
+|       |-- 1000G.EUR.QC.22.bed
+|       |-- 1000G.EUR.QC.22.hg38.bed
+|       |-- 1000G.EUR.QC.22.kept_snps.txt
+|       |-- 1000G.EUR.QC.22.unmapped.bed
+|       |-- 1000G.EUR.QC.2.bed
+|       |-- 1000G.EUR.QC.2.hg38.bed
+|       |-- 1000G.EUR.QC.2.kept_snps.txt
+|       |-- 1000G.EUR.QC.2.unmapped.bed
+|       |-- 1000G.EUR.QC.3.bed
+|       |-- 1000G.EUR.QC.3.hg38.bed
+|       |-- 1000G.EUR.QC.3.kept_snps.txt
+|       |-- 1000G.EUR.QC.3.unmapped.bed
+|       |-- 1000G.EUR.QC.4.bed
+|       |-- 1000G.EUR.QC.4.hg38.bed
+|       |-- 1000G.EUR.QC.4.kept_snps.txt
+|       |-- 1000G.EUR.QC.4.unmapped.bed
+|       |-- 1000G.EUR.QC.5.bed
+|       |-- 1000G.EUR.QC.5.hg38.bed
+|       |-- 1000G.EUR.QC.5.kept_snps.txt
+|       |-- 1000G.EUR.QC.5.unmapped.bed
+|       |-- 1000G.EUR.QC.6.bed
+|       |-- 1000G.EUR.QC.6.hg38.bed
+|       |-- 1000G.EUR.QC.6.kept_snps.txt
+|       |-- 1000G.EUR.QC.6.unmapped.bed
+|       |-- 1000G.EUR.QC.7.bed
+|       |-- 1000G.EUR.QC.7.hg38.bed
+|       |-- 1000G.EUR.QC.7.kept_snps.txt
+|       |-- 1000G.EUR.QC.7.unmapped.bed
+|       |-- 1000G.EUR.QC.8.bed
+|       |-- 1000G.EUR.QC.8.hg38.bed
+|       |-- 1000G.EUR.QC.8.kept_snps.txt
+|       |-- 1000G.EUR.QC.8.unmapped.bed
+|       |-- 1000G.EUR.QC.9.bed
+|       |-- 1000G.EUR.QC.9.hg38.bed
+|       |-- 1000G.EUR.QC.9.kept_snps.txt
+|       `-- 1000G.EUR.QC.9.unmapped.bed
+|-- LDSC_resource
+|   |-- hapmap3_snps
+|   |   |-- hm.10.snp
+|   |   |-- hm.11.snp
+|   |   |-- hm.12.snp
+|   |   |-- hm.13.snp
+|   |   |-- hm.14.snp
+|   |   |-- hm.15.snp
+|   |   |-- hm.16.snp
+|   |   |-- hm.17.snp
+|   |   |-- hm.18.snp
+|   |   |-- hm.19.snp
+|   |   |-- hm.1.snp
+|   |   |-- hm.20.snp
+|   |   |-- hm.21.snp
+|   |   |-- hm.22.snp
+|   |   |-- hm.2.snp
+|   |   |-- hm.3.snp
+|   |   |-- hm3.snp
+|   |   |-- hm.4.snp
+|   |   |-- hm.5.snp
+|   |   |-- hm.6.snp
+|   |   |-- hm.7.snp
+|   |   |-- hm.8.snp
+|   |   |-- hm.9.snp
+|   |   `-- w_hm3.snpslist
+|   `-- weights_hm3_no_hla
+|       |-- weights.10.l2.ldscore.gz
+|       |-- weights.11.l2.ldscore.gz
+|       |-- weights.12.l2.ldscore.gz
+|       |-- weights.13.l2.ldscore.gz
+|       |-- weights.14.l2.ldscore.gz
+|       |-- weights.15.l2.ldscore.gz
+|       |-- weights.16.l2.ldscore.gz
+|       |-- weights.17.l2.ldscore.gz
+|       |-- weights.18.l2.ldscore.gz
+|       |-- weights.19.l2.ldscore.gz
+|       |-- weights.1.l2.ldscore.gz
+|       |-- weights.20.l2.ldscore.gz
+|       |-- weights.21.l2.ldscore.gz
+|       |-- weights.22.l2.ldscore.gz
+|       |-- weights.2.l2.ldscore.gz
+|       |-- weights.3.l2.ldscore.gz
+|       |-- weights.4.l2.ldscore.gz
+|       |-- weights.5.l2.ldscore.gz
+|       |-- weights.6.l2.ldscore.gz
+|       |-- weights.7.l2.ldscore.gz
+|       |-- weights.8.l2.ldscore.gz
+|       `-- weights.9.l2.ldscore.gz
+`-- quick_mode
+    |-- baseline
+    |   |-- baseline.10.l2.ldscore.feather
+    |   |-- baseline.10.l2.M
+    |   |-- baseline.10.l2.M_5_50
+    |   |-- baseline.11.l2.ldscore.feather
+    |   |-- baseline.11.l2.M
+    |   |-- baseline.11.l2.M_5_50
+    |   |-- baseline.12.l2.ldscore.feather
+    |   |-- baseline.12.l2.M
+    |   |-- baseline.12.l2.M_5_50
+    |   |-- baseline.13.l2.ldscore.feather
+    |   |-- baseline.13.l2.M
+    |   |-- baseline.13.l2.M_5_50
+    |   |-- baseline.14.l2.ldscore.feather
+    |   |-- baseline.14.l2.M
+    |   |-- baseline.14.l2.M_5_50
+    |   |-- baseline.15.l2.ldscore.feather
+    |   |-- baseline.15.l2.M
+    |   |-- baseline.15.l2.M_5_50
+    |   |-- baseline.16.l2.ldscore.feather
+    |   |-- baseline.16.l2.M
+    |   |-- baseline.16.l2.M_5_50
+    |   |-- baseline.17.l2.ldscore.feather
+    |   |-- baseline.17.l2.M
+    |   |-- baseline.17.l2.M_5_50
+    |   |-- baseline.18.l2.ldscore.feather
+    |   |-- baseline.18.l2.M
+    |   |-- baseline.18.l2.M_5_50
+    |   |-- baseline.19.l2.ldscore.feather
+    |   |-- baseline.19.l2.M
+    |   |-- baseline.19.l2.M_5_50
+    |   |-- baseline.1.l2.ldscore.feather
+    |   |-- baseline.1.l2.M
+    |   |-- baseline.1.l2.M_5_50
+    |   |-- baseline.20.l2.ldscore.feather
+    |   |-- baseline.20.l2.M
+    |   |-- baseline.20.l2.M_5_50
+    |   |-- baseline.21.l2.ldscore.feather
+    |   |-- baseline.21.l2.M
+    |   |-- baseline.21.l2.M_5_50
+    |   |-- baseline.22.l2.ldscore.feather
+    |   |-- baseline.22.l2.M
+    |   |-- baseline.22.l2.M_5_50
+    |   |-- baseline.2.l2.ldscore.feather
+    |   |-- baseline.2.l2.M
+    |   |-- baseline.2.l2.M_5_50
+    |   |-- baseline.3.l2.ldscore.feather
+    |   |-- baseline.3.l2.M
+    |   |-- baseline.3.l2.M_5_50
+    |   |-- baseline.4.l2.ldscore.feather
+    |   |-- baseline.4.l2.M
+    |   |-- baseline.4.l2.M_5_50
+    |   |-- baseline.5.l2.ldscore.feather
+    |   |-- baseline.5.l2.M
+    |   |-- baseline.5.l2.M_5_50
+    |   |-- baseline.6.l2.ldscore.feather
+    |   |-- baseline.6.l2.M
+    |   |-- baseline.6.l2.M_5_50
+    |   |-- baseline.7.l2.ldscore.feather
+    |   |-- baseline.7.l2.M
+    |   |-- baseline.7.l2.M_5_50
+    |   |-- baseline.8.l2.ldscore.feather
+    |   |-- baseline.8.l2.M
+    |   |-- baseline.8.l2.M_5_50
+    |   |-- baseline.9.l2.ldscore.feather
+    |   |-- baseline.9.l2.M
+    |   `-- baseline.9.l2.M_5_50
+    |-- SNP_gene_pair
+    |   |-- SNP_gene_pair_chr10.feather
+    |   |-- SNP_gene_pair_chr11.feather
+    |   |-- SNP_gene_pair_chr12.feather
+    |   |-- SNP_gene_pair_chr13.feather
+    |   |-- SNP_gene_pair_chr14.feather
+    |   |-- SNP_gene_pair_chr15.feather
+    |   |-- SNP_gene_pair_chr16.feather
+    |   |-- SNP_gene_pair_chr17.feather
+    |   |-- SNP_gene_pair_chr18.feather
+    |   |-- SNP_gene_pair_chr19.feather
+    |   |-- SNP_gene_pair_chr1.feather
+    |   |-- SNP_gene_pair_chr20.feather
+    |   |-- SNP_gene_pair_chr21.feather
+    |   |-- SNP_gene_pair_chr22.feather
+    |   |-- SNP_gene_pair_chr2.feather
+    |   |-- SNP_gene_pair_chr3.feather
+    |   |-- SNP_gene_pair_chr4.feather
+    |   |-- SNP_gene_pair_chr5.feather
+    |   |-- SNP_gene_pair_chr6.feather
+    |   |-- SNP_gene_pair_chr7.feather
+    |   |-- SNP_gene_pair_chr8.feather
+    |   `-- SNP_gene_pair_chr9.feather
+    `-- snp_gene_weight_matrix.h5ad

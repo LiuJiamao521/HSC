@@ -1,0 +1,3 @@
+fastqs,sample,library_type
+/cluster/huanglab/lab/LabDataset/jiamao/HumanSpinalCord/RawData/scMulti-omics/GW7/RNA/,GW7,Gene Expression
+/cluster/huanglab/lab/LabDataset/jiamao/HumanSpinalCord/RawData/scMulti-omics/GW7/ATAC/,GW7,Chromatin Accessibility
