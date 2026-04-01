@@ -43,9 +43,5 @@ Project_Code_Release/
 1. **snMultiomic:** Quantify Multiome data (Cell Ranger ARC); analyze snRNA (Scanpy) and snATAC (SnapATAC2) with label transfer; motif enrichment (HOMER); optional RNA velocity (velocyto + scVelo); footprinting (scPrinter / Seq2Print); gene regulatory networks (pyCistopic, SCENIC+); in silico TF perturbation (CellOracle).
 2. **spatial:** Preprocess Stereo-seq; integrate with single-nucleus references (Seurat / Harmony / kNN); Cell2location deconvolution; spatial pathway scores (UCell); pseudo spatial-ATAC and chromVAR; NicheCompass niches; neighborhood / NCEM / CellChat; trait mapping and LDSC-style enrichment.
 
-## Path conventions
-
-Notebooks were developed on an internal cluster and may still reference paths such as `/cluster2/huanglab/...`. Define a **single project root** (or config) at the top of each script or notebook and build all paths from it before reuse or publication.
-
 ## Citation
 ...
