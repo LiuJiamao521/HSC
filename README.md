@@ -1,10 +1,10 @@
-# Human Spinal Cord Multi-omics Atlas Code Release
+# Human Spinal Cord Multi-omics Atlas
 
 ## Overview
 
-This repository organizes analysis code used to study the developing human spinal cord with **single-nucleus Multiome (snRNA + snATAC)** and **Stereo-seq** spatial transcriptomics. Layout follows the manuscript workflow so reviewers and readers can trace each major module—from raw quantification and modality-specific processing to spatial integration, pathway scoring, regulatory inference, niches, cell–cell communication, and trait enrichment.
+This repository collects the analysis code we used to study the developing human spinal cord with **single-nucleus Multiome (snRNA + snATAC)** and **Stereo-seq** spatial transcriptomics. The directory layout follows our end-to-end workflow—from raw quantification and modality-specific processing to spatial integration, pathway scoring, regulatory inference, niches, cell–cell communication, and trait enrichment.
 
-![High-level workflow](workflow.png)
+![workflow](workflow.png)
 
 ## Repository structure
 
@@ -36,12 +36,12 @@ Project_Code_Release/
 └── README.md
 ```
 
-**Submodule docs:** `snMultiomic/README.md` and `spatial/README.md` summarize recommended order, outputs, and notes; each numbered folder under them has its own `README.md` where applicable.
+**Submodule docs:** `snMultiomic/README.md` and `spatial/README.md` summarize the recommended order, outputs, and notes; each numbered folder under them has its own `README.md` where applicable.
 
-## Workflow (high level)
+## Workflow
 
 1. **snMultiomic:** Quantify Multiome data (Cell Ranger ARC); analyze snRNA (Scanpy) and snATAC (SnapATAC2) with label transfer; motif enrichment (HOMER); optional RNA velocity (velocyto + scVelo); footprinting (scPrinter / Seq2Print); gene regulatory networks (pyCistopic, SCENIC+); in silico TF perturbation (CellOracle).
-2. **spatial:** Preprocess Stereo-seq; integrate with single-nucleus references (Seurat / Harmony / kNN); Cell2location deconvolution; spatial pathway scores (UCell); pseudo spatial-ATAC and chromVAR; NicheCompass niches; neighborhood / NCEM / CellChat; trait mapping and LDSC-style enrichment (see `08_trait_gwas_gsmap_ldsc/README.md`).
+2. **spatial:** Preprocess Stereo-seq; integrate with single-nucleus references (Seurat / Harmony / kNN); Cell2location deconvolution; spatial pathway scores (UCell); pseudo spatial-ATAC and chromVAR; NicheCompass niches; neighborhood / NCEM / CellChat; trait mapping and LDSC-style enrichment.
 
 ## Path conventions
 
